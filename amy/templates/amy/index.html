@@ -2,12 +2,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Hallows Warming Party</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Nosifer&family=Special+Elite&display=swap" rel="stylesheet">
 
 	{% load static %}
-	<!-- <link rel="stylesheet" href="https://www.sapiezynski.com/mycaptcha/style.css" type="text/css"/> -->
-	<link rel="stylesheet" href="static/style.css" type="text/css"/>
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
+	<link rel="stylesheet" href="static/style.css" type="text/css"/>
 	<script>
 		const GRID_SIZE = 3;
 		const WIDTH = "100%";
@@ -122,13 +130,13 @@
 		<h1>House Warming Party RSVP</h1>
 		<p><span id="response"></span></p>
 		<form id="formElem">
-			<input name="name" placeholder="Your name" type="text"/> <br/>
-			<input name="email" placeholder="Your email" type="email" /> <br/>
-			<input name="count" placeholder="Party size" type="number"/> <br/>
-			<label><input type="radio" id="att_yes" name="att" value="att_yes"> I shall be there.</label>
-			<label><input type="radio" id="att_no" name="att" value="att_no"> I shan't.</label>
-			<label><input type="radio" id="att_maybe" name="att" value="att_maybe"> I will see about that.</label>
-
+			<input name="name" class="form-control form-control-sm" placeholder="Your name" type="text"/> <br/>
+			<input name="email" class="form-control form-control-sm" placeholder="Your email" type="email" /> <br/>
+			<input name="count" class="form-control form-control-sm" placeholder="Party size" type="number"/> <br/>
+			<label><input type="radio" class="form-check-input" id="att_yes" name="att" value="att_yes"> I shall be there.</label>
+			<label><input type="radio" class="form-check-input" id="att_no" name="att" value="att_no"> I shan't.</label>
+			<label><input type="radio" class="form-check-input" id="att_maybe" name="att" value="att_maybe"> I will see about that.</label>
+			<br>
 			<p>Despite our best wishes the pandemic is not over. To minimize the chance that this party leads to any harm or even bad memories we ask you to do a rapid test on the day of and only come if you're negative. We will have some tests available if you can't find one in time!</p>
 			<label><input type="checkbox" name="covid"> I will test on the day of the party</label>
 
